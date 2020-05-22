@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-image: url("./images/third.png");
+    background-size: cover;
+    height: 100vh;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    transition: background-image 4s ease-in-out;
+}
+
+h1 {
+    padding: 40px 80px;
+    color: white;
+}
+
+main#content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+main#content  h1, main#content  h2 {
+    flex: 0 1 100%;
+    text-align: center;
+    min-height: 30px;
+}
+
+main#content  div{
+    width: 7rem;
+    border-radius: .5rem;
+    border: .2rem solid #000000;
+    margin: .7rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+main#content  div:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+.active {
+    box-shadow: 0 0 .5rem .5rem #e6e6ff;
+    transform: scale(1.1);
+    border-color: #e6e6ff;
+}
+
+kbd {
+    display: block;
+    font-size: 3rem;
+    color: #e6e6ff;
+}
+
+.sound {
+    color: #ffc600;
+}
+
+a.credits {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
